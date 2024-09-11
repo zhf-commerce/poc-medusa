@@ -23,7 +23,8 @@
     "start": "medusa migrations run && medusa start",
     "start:custom": "cross-env npm run build && node --preserve-symlinks --trace-warnings index.js",
     "medusa:start": "medusa start",
-    "dev": "cross-env npm run build:server && medusa develop"
+    "dev": "cross-env npm run build:server && medusa develop",
+    "build:vercel": "medusa-admin build --deployment"
   },
   "dependencies": {
     "@medusajs/admin": "^7.1.16",
